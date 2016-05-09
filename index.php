@@ -31,6 +31,10 @@ add_action('wp_enqueue_scripts','scriptFile');
 
 
 function sliderShortcode(){
+	
+/*
+	These are options .........
+*/
 	$optionValue = (array)get_option('carouselOptions');
 	$indicator = $optionValue['bs_carousel_indicator'];
 	$interval = $optionValue['bs_carousel_interval'];
