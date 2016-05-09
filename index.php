@@ -48,6 +48,9 @@ function sliderShortcode(){
 
 
 
+/*
+	These are options scripts and styles .........
+*/
 
 ?>
 	<script type="text/javascript">
@@ -72,15 +75,11 @@ function sliderShortcode(){
 			text-transform: ;
 		}
 	</style>
-
-
-
-
 <?php
 
-
-
-
+/*
+	This is Query from any post and custom post
+*/
 
 	$q = new WP_Query(
 		array(
@@ -126,7 +125,6 @@ $list='<div id="'.$id.'" class="carousel slide" data-ride="carousel">';
 
 	wp_reset_query();
 	return $list;
-
 
 }
 add_shortcode('slider','sliderShortcode');
