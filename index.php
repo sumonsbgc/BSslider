@@ -78,7 +78,7 @@ function sliderShortcode(){
 <?php
 
 /*
-	This is Query from any post and custom post
+	This is Query from any post and custom post..
 */
 
 	$q = new WP_Query(
